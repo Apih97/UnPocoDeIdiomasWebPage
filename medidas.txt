@@ -1,0 +1,7 @@
+contenedor: 990x1200
+Header: 990x150
+Barra nav: 990x60
+Articulo: 990x800
+         -Seccion: 700x800
+         -Barra alado: 290x880
+Pie de pagina: 990x100

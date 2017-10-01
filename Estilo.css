@@ -1,0 +1,61 @@
+#Contenedor {
+	width: 990px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #0832F5;
+}
+#Contenedor {
+}
+
+#Contenedor #Header {
+	width: 990px;
+	height: 150px;
+	float: left;
+	background-color: #fff;
+}
+#Contenedor #BarraNav {
+	width: 990px;
+	height: 53px;
+	background-color: #F0FF00;
+	float: left;
+}
+#Contenedor #Articulo {
+	width: 990px;
+	height: auto;
+	float: left;
+	background-color: #FCF6F6;
+		
+}
+#Contenedor #Articulo #Seccion {
+	width: 700px;
+	float: left;
+	height: 800px;
+}
+#Contenedor #Articulo #Aside {
+	width: 290px;
+	height: 800px;
+	background-color: #00E3FF;
+	float: right;
+}
+#Contenedor #Footer {
+	width: 990px;
+	height: 110px;
+	background-color: #FC494C;
+	
+}
+
+
+.main-wrapper {
+	margin: 0 auto;
+	width: 990px;
+}
+
+.nav-login {
+	width: 50%;
+	height: 60px;
+	background-color: #fff; 
+}
+
+
+
