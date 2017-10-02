@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<link rel="icon" type="image/ico" href="Material/favicon.ico" />
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>UnPocoDeIdiomas</title>
-<link href="Estilo.css" rel="stylesheet" type="text/css">
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css">
+<?php
 
-
-</head>
+  include_once 'header.php'
+  
+?>
 <body bgcolor="white">
 <!-- HEADER -->
-<header>
-<nav>
-  <div class="main-wrapper">
-    <div class="nav-login"> 
-    <form>
-      <input type="text" name="uid" placeholder="Usuario/Correo">
-      <input type="password" name="pwd" placeholder="Contraseña">
-      <button type="submit" name="submit">Entrar</button>
-    </form>
-    <a href="registrar.php">Registrarse</a>
-    </div>
-  </div>
-
-</nav>
-
   <div class="jumbotron">
     <div class="container">
       <div class="row">
@@ -190,22 +166,11 @@
     <!-- / CONTAINER--> 
 </section>
 <!-- FOOTER -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-offset-3 col-xs-12 col-lg-6"> </div>
-  </div>
-</div>
-<div class="En blanco"></div>
-<p>&nbsp;</p>
-<footer class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>Copyright ©UnPocoDeTodo. Derechos reservados.</p>
-      </div>
-    </div>
-  </div>
-</footer>
+<?php
+
+  include_once 'footer.php'
+  
+?>
 <!-- / FOOTER --> 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 

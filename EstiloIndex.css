@@ -48,13 +48,14 @@
 
 .main-wrapper {
 	margin: 0 auto;
+	height: 60px;
 	width: 990px;
+	background-color: #6E6E6E; 
 }
 
-.nav-login {
-	width: 50%;
-	height: 60px;
-	background-color: #6E6E6E; 
+a {
+	text-decoration: none;
+
 }
 
 header nav {
@@ -62,6 +63,25 @@ header nav {
 	height: 60px;
 	background-color: #6E6E6E; 
 }
+
+header nav ul {
+	float: left
+}
+
+header nav ul li {
+	float: left
+	style: none;
+	color:#FFFFFF;
+	list-style: none;
+}
+
+header nav ul li a {
+	float: left
+	font-size: 20px;
+	color:#FFFFFF;
+	line-height: 63px;
+}
+
 
 header nav a {
 	font-size: 16px;
@@ -107,13 +127,46 @@ header .nav-login a {
 	display: block;
 	width: 60px;
 	height: 60px;
+	background-color: #E0F8F7
 	border: none;
-	background-color: #6E6E6E;
 	font-size: 16px;
 	line-height: 63px;
 	cursor: pointer;
 	float: left;
 }
+
+/*registrar.php*/
+.registro-form {
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 30px;  
+}
+
+.registro-form input {
+	width: 100%;
+	height: 40px;
+	padding: 0px 5%;
+	margin-bottom: 4px;
+	border: none;
+	background-color: #F2F2F2;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.registro-form button {
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	height: 40px;
+	border: none;
+	background-color: #f3f3f3;
+	font-size: 16px;
+	cursor: pointer;
+}
+.registro-form button:hover {
+	background-color: #FFFFFF;
+}
+
 
 
 

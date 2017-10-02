@@ -7,6 +7,7 @@
   <div class="row">
     <div class="col-lg-12 page-header text-center">
       <h2>¡Logeate para ver el contenido completo!</h2>
+      <h4>Si aun no estas en lista, ¡registrate!</h4>
     </div>
   </div>
   
@@ -47,22 +48,11 @@
     <!-- / CONTAINER--> 
 </section>
 <!-- FOOTER -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-offset-3 col-xs-12 col-lg-6"> </div>
-  </div>
-</div>
-<div class="En blanco"></div>
-<p>&nbsp;</p>
-<footer class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>Copyright ©UnPocoDeTodo. Derechos reservados.</p>
-      </div>
-    </div>
-  </div>
-</footer>
+<?php
+
+  include_once 'footer.php'
+  
+?>
 <!-- / FOOTER --> 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
