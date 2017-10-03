@@ -36,10 +36,9 @@
               <input type="password" name="pwd" placeholder="password">
               <button type="submit" name="submit">Entrar</button>
             </form>
-            <a href="signup.php">Sign up</a>';
+            <a href="registrar.php">Sign up</a>';
           }
         ?>
-      <a href="registrar.php">Registrarse</a>
     </div>
   </div>
 
