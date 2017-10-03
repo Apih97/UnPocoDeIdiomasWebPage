@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +25,8 @@
       <li><a href="index.php">Inicio</a></li>
     </ul>
     <div class="nav-login"> 
-    <form>
-      <input type="text" name="uid" placeholder="Usuario/Correo">
+    <form action="includes/login.inc.php" method="POST">
+      <input type="text" name="uid" placeholder="Usuario">
       <input type="password" name="pwd" placeholder="Contraseña">
       <button type="submit" name="submit">Entrar</button>
     </form>

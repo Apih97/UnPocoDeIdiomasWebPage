@@ -3,6 +3,7 @@
 if (isset($_POST['Registrar'])) {
 	
 	include_once 'dbh.inc.php';
+	include_once 'registrar.php';
 
 	$nombre = mysqli_real_escape_string($conn, $_POST['PrimerNombre']);
 	$apellido = mysqli_real_escape_string($conn, $_POST['PrimerApellido']);
@@ -19,15 +20,12 @@ if (isset($_POST['Registrar'])) {
 	}else {
 		//revisar si los caracteres puestos son validos
 		if (!preg_match("/^[a-zA-Z ]*$/",$nombre) || !preg_match("/^[a-zA-Z ]*$/",$apellido)) {
-  				$nombreErr = "Solo letras";
-  				echo $nombreErr; 
 				header("Location: ../registrar.php?registrar=caracinvalids");
 				exit();
 			}else {
 			//Revisar si correo es válido
 			if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
-  					$correoErr = "Correo invalido"; 
-					header("Location: ../registrar.php?registrar=malcorreo");
+  					header("Location: ../registrar.php?registrar=malcorreo");
 					exit();	
 				}
 			else {
@@ -54,5 +52,6 @@ if (isset($_POST['Registrar'])) {
 
 } else {
 	header("Location: ../registrar.php");
+	//Mensaje de confirmación
 	exit();
 }
