@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 	 	header("Location: ../index.php?login=vacio");
 		exit();
 	 } else {
-	 	$sql = "SELECT * FROM usuario WHERE usuario_uid='$uid'";
+	 	$sql = "SELECT * FROM usuario WHERE usuario_uid='$uid' OR usuario_correo = '$uid'";
 	 	$resultado = mysqli_query($conn, $sql);
 	 	$resultadocheck = mysqli_num_rows($resultado);
 	 	if ($resultadocheck < 1) {

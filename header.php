@@ -25,12 +25,21 @@
       <li><a href="index.php">Inicio</a></li>
     </ul>
     <div class="nav-login"> 
-    <form action="includes/login.inc.php" method="POST">
-      <input type="text" name="uid" placeholder="Usuario">
-      <input type="password" name="pwd" placeholder="Contraseña">
-      <button type="submit" name="submit">Entrar</button>
-    </form>
-    <a href="registrar.php">Registrarse</a>
+      <?php
+          if (isset($_SESSION['u_id'])) {
+            echo '<form action="includes/logout.inc.php" method="POST">
+              <button type="submit" name="submit">Salir</button>
+            </form>';
+          } else {
+            echo '<form action="includes/login.inc.php" method="POST">
+              <input type="text" name="uid" placeholder="Username/e-mail">
+              <input type="password" name="pwd" placeholder="password">
+              <button type="submit" name="submit">Entrar</button>
+            </form>
+            <a href="signup.php">Sign up</a>';
+          }
+        ?>
+      <a href="registrar.php">Registrarse</a>
     </div>
   </div>
 
